@@ -10,7 +10,7 @@ a{
     }
 
 
-ul, ol {
+ul, ol, li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -214,7 +214,7 @@ background-color: #4d5ae5;
 height: 56px;
 border-radius: 4px;
 cursor: pointer;
-background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .hero-button-section:hover,
 .hero-button-section:focus
 {
@@ -223,57 +223,20 @@ background-color: #404BBF
 }
 /*  end region hero */
 
-/* region section */
-.section-text-one{
-background-color: #fff;
-padding: 120px 0;
-}
-
-.container{
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
-}
+/* region section-1 */
 
 .conteiner-section-one{
-display: flex;
-align-items: center;
-justify-content: center;
-height: 112px;
-width: 264px;
-background-color: #f4f4fd;
-border-radius: 4px;
-border: 1px solid #8e8f99;
-margin-bottom: 8px;
-gap: 24px;
-
+    width: 1440px;
+    margin: 0 130px;
+    padding: 120px 0;
 }
 
-.icon-list {
+.section-list{
     display: flex;
-}
-
-.icon-item {
-}
-
-.icon-link {}
-
-.icon {
-}
-
-.icon-list {
-    display: flex;
+    justify-content: center;
     gap: 24px;
+    width: (calc ( 100% - 24px * 3 ) / 4);
 }
-
-.icon-item {}
-
-.icon-link {
-    display: block;
-}
-
-.icon {}
-
 
 .visually-hidden {
     position: absolute;
@@ -288,31 +251,39 @@ gap: 24px;
     overflow: hidden;
     }
 
-.section-list-one{
-display: flex;
-gap: 24px;
-}
+    .box-icon-text{
+        width: 264px;
+        height: 224px;
+    }
 
-.section-list-item-one{
-width: calc(( 100% - 72px ) / 4);
-}
+    .box-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        background: #F4F4FD;
+        
+    }
 
-.section-item-title{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
-margin-bottom: 8px;
-}
+    .section-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        }
 
-.section-item-text{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-}
+    .section-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        }
 /* end region section */
 
 /* region section photo */
