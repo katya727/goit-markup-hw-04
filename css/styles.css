@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 
 body{
     font-family: "Roboto", sans-serif;
@@ -231,11 +229,14 @@ background-color: #404BBF
 
 .conteiner-section-one{
     width: 1440px;
-    margin: 0 130px;
+    margin: 0 auto;
     padding: 120px 0;
-    /* display: flex;
-    justify-content: center; */
+}
 
+.container-box{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .visually-hidden {
