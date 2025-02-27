@@ -229,13 +229,8 @@ background-color: #404BBF
     width: 1440px;
     margin: 0 130px;
     padding: 120px 0;
-}
-
-.section-list{
     display: flex;
     justify-content: center;
-    gap: 24px;
-    width: (calc ( 100% - 24px * 3 ) / 4);
 }
 
 .visually-hidden {
@@ -251,9 +246,16 @@ background-color: #404BBF
     overflow: hidden;
     }
 
-    .box-icon-text{
+    .section{
         width: 264px;
         height: 224px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        width: (calc (100% - 24px * 3) / 4);
+    }
+
+    .section-list{
     }
 
     .box-icon{
@@ -265,6 +267,7 @@ background-color: #404BBF
         border: 1px solid #8E8F99;
         border-radius: 4px;
         background: #F4F4FD;
+        margin-bottom: 8px;
         
     }
 
@@ -547,16 +550,16 @@ display: inline-block;
     max-width: 264px
 }
 
-
-
 .container_{
-    justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 20px;
     }
 
 .container-footer-social{
-flex-direction: column;
+/* flex-direction: column; */
 align-items: center;
 justify-content: center;
 /* display: flex; */
