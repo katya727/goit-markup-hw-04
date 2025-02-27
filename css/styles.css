@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     background: #fff;
@@ -229,8 +233,9 @@ background-color: #404BBF
     width: 1440px;
     margin: 0 130px;
     padding: 120px 0;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+
 }
 
 .visually-hidden {
@@ -253,9 +258,6 @@ background-color: #404BBF
         justify-content: center;
         gap: 24px;
         width: (calc (100% - 24px * 3) / 4);
-    }
-
-    .section-list{
     }
 
     .box-icon{
@@ -554,7 +556,7 @@ display: inline-block;
     display: flex;
     align-items: baseline;
     /* justify-content: space-between; */
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
     }
 
